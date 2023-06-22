@@ -1,9 +1,9 @@
 const MainRoutes = {
-  path: '/main',
+  path: '',
   meta: {
     requiresAuth: true,
   },
-  redirect: '/main',
+  redirect: '',
   component: () => import('@/views/FullLayout.vue'),
   children: [],
 };
