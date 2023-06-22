@@ -1,8 +1,8 @@
-# For install packages
+### For install packages
 npm install
 
-# For start server
+### For start server
 npm run dev
 
-# For build
+### For build
 npm build
