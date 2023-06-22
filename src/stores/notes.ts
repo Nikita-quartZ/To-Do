@@ -27,8 +27,8 @@ export const useNoteStore = defineStore({
     async fetchNotes() {
       const notes = [];
       for (let i = 0; i < localStorage.length; i += 1) {
-        const key = localStorage.key(i);
-        notes.push(JSON.parse(localStorage.getItem(key)));
+        const key = localStorage.key(i) || '{}';
+        notes.push(JSON.parse(localStorage.getItem(key) || '{}'));
       }
       this.notes = notes;
     },
